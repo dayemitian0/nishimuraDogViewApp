@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1084C62AB05107008DEA08 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084C52AB05107008DEA08 /* DogListViewController.swift */; };
+		CE1084C92AB051F7008DEA08 /* DogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084C82AB051F7008DEA08 /* DogListTableViewCell.swift */; };
 		CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */; };
 		CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */; };
 		CED8EEAA2AAB146C00AC6D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA92AAB146C00AC6D37 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1084C52AB05107008DEA08 /* DogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewController.swift; sourceTree = "<group>"; };
+		CE1084C82AB051F7008DEA08 /* DogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListTableViewCell.swift; sourceTree = "<group>"; };
 		CED8EEA22AAB146C00AC6D37 /* DogViewApp_School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogViewApp_School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1084C72AB0510E008DEA08 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE1084C52AB05107008DEA08 /* DogListViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		CE1084CA2AB05205008DEA08 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE1084C82AB051F7008DEA08 /* DogListTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		CED8EE992AAB146C00AC6D37 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +76,8 @@
 		CED8EEA42AAB146C00AC6D37 /* DogViewApp_School */ = {
 			isa = PBXGroup;
 			children = (
+				CE1084CA2AB05205008DEA08 /* cell */,
+				CE1084C72AB0510E008DEA08 /* viewController */,
 				CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */,
 				CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */,
 				CED8EEA92AAB146C00AC6D37 /* ViewController.swift */,
@@ -141,6 +163,8 @@
 				CED8EEAA2AAB146C00AC6D37 /* ViewController.swift in Sources */,
 				CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */,
 				CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */,
+				CE1084C62AB05107008DEA08 /* DogListViewController.swift in Sources */,
+				CE1084C92AB051F7008DEA08 /* DogListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
