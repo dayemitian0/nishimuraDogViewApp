@@ -52,6 +52,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dogName" destination="wHe-lA-xo7" id="SGQ-Tq-5wl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

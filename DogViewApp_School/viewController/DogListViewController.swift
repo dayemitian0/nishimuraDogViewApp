@@ -11,7 +11,7 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     let navigationBarTitile = "ホーム"
 
-    var dogList = ["dog", "chees"]
+    var breedsList: [BreedsData] = []
     
     @IBOutlet weak var dogListTableView: UITableView!
     
@@ -21,17 +21,49 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         dogListTableView.dataSource = self
         
         self.navigationItem.title = navigationBarTitile
-
+        self.prepareBreedsList()
     }
     
+    // ランダムボタンタップ
     @IBAction func randumBarButtonTapped(_ sender: Any) {
         print("tappled randum")
-        // ここでAPI実施
     }
     
+    // 右端の詳細箇所タップ
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        guard let cell = dogListTableView.dequeueReusableCell(withIdentifier: "dogListCell", for: indexPath) as? DogListTableViewCell else {
+            // 例外:なにもしない
+            return
+        }
+        let rowBreadData = breedsList[indexPath.row]
+        print("dogName =  \(rowBreadData.dogBreeds)")
+    }
+
+    
+    private func setBreedList(breedsList: [BreedsData]) {
+        // 並び替えしてからセットする
+        var sortedList = breedsList
+        sortedList.sort(by: {$0.dogBreeds < $1.dogBreeds})
+        self.breedsList = sortedList
+    }
+    
+    private func refreshTableView() {
+        DispatchQueue.main.async {
+            self.dogListTableView.refreshControl?.endRefreshing()
+            self.dogListTableView.reloadData()
+        }
+    }
+    
+    private func prepareBreedsList() {
+        let apiWrapper = DogAPIWrapper()
+        apiWrapper.getDogList { breedsDatas in
+            self.setBreedList(breedsList: breedsDatas)
+            self.refreshTableView()
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dogList.count
+        return breedsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +72,15 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
             // 例外:とりあえず空で返す
             let cell = UITableViewCell()
             return cell
+        }
+        let rowBreadData = breedsList[indexPath.row]
+    
+        cell.dogName.text = rowBreadData.dogBreeds
+        // 右端部分のボタンを設定
+        if rowBreadData.hasSubBreeds() {
+            cell.accessoryType = UITableViewCell.AccessoryType.detailDisclosureButton
+        } else {
+            cell.accessoryType = UITableViewCell.AccessoryType.none
         }
 
         // Configure the cell...

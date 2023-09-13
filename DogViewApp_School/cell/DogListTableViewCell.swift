@@ -10,6 +10,7 @@ import UIKit
 class DogListTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var dogName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
