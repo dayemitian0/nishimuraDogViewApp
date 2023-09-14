@@ -79,10 +79,8 @@ class SelectedBreedsCollectionViewController: UICollectionViewController {
 extension SelectedBreedsCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // 例えば端末サイズの半分の width と height にして 2 列にする場合
+        // 端末サイズの半分のwidthとheightにして2列にする
         let width: CGFloat = dogImageCollectionView.frame.width / 2
-
-//        let width: CGFloat = UIScreen.main.bounds.width / 2
         let height = width
         return CGSize(width: width, height: height)
     }

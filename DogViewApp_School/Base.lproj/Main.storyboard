@@ -120,6 +120,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="dogImage" destination="Vns-ic-TEQ" id="rsV-qr-bai"/>
+                                    <segue destination="aaZ-GY-W9V" kind="show" id="tn9-qq-cqA"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -136,6 +137,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l75-8L-W1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="-37"/>
+        </scene>
+        <!--Dog Paging Page View Controller-->
+        <scene sceneID="WAS-9q-wPo">
+            <objects>
+                <pageViewController storyboardIdentifier="DogPagingPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="aaZ-GY-W9V" customClass="DogPagingPageViewController" customModule="DogViewApp_School" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TYu-PM-Y4G"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CO3-qb-bsi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2319" y="-36"/>
+        </scene>
+        <!--Single Dog View Controller-->
+        <scene sceneID="76U-pK-r6S">
+            <objects>
+                <viewController id="WVc-Fd-9m1" customClass="SingleDogViewController" customModule="DogViewApp_School" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUN-nJ-NP5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CXx-cY-szk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K8q-OG-hfi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amv-iq-i11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318" y="726"/>
+        </scene>
+        <!--Single Dog Image View Controller-->
+        <scene sceneID="OaO-Ye-AEy">
+            <objects>
+                <viewController storyboardIdentifier="SingleDogImageViewController" id="nd5-n8-KZp" customClass="SingleDogImageViewController" customModule="DogViewApp_School" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CIj-Pw-id2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5p-QX-5A5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2E7-RY-JPg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W5p-QX-5A5" firstAttribute="top" secondItem="2E7-RY-JPg" secondAttribute="top" id="2oQ-Bc-gy1"/>
+                            <constraint firstItem="2E7-RY-JPg" firstAttribute="trailing" secondItem="W5p-QX-5A5" secondAttribute="trailing" id="Ove-FR-Zvu"/>
+                            <constraint firstItem="2E7-RY-JPg" firstAttribute="bottom" secondItem="W5p-QX-5A5" secondAttribute="bottom" id="iX8-bv-mI8"/>
+                            <constraint firstItem="W5p-QX-5A5" firstAttribute="leading" secondItem="2E7-RY-JPg" secondAttribute="leading" id="j8x-4D-7v5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="W5p-QX-5A5" id="ogv-wM-LlT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPz-GZ-3A5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3301" y="-37"/>
         </scene>
     </scenes>
     <resources>

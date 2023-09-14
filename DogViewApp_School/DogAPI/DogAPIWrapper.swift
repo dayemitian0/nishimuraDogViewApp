@@ -9,7 +9,6 @@ import UIKit
 
 class DogAPIWrapper {
 
-    
     func getDogList(success: @escaping([BreedsData]) -> Void) {
         let api = ListAllBreedsAPI()
         api.getListAllBreedsAPI { breedsInfo in

@@ -17,6 +17,9 @@
 		CE1084D72AB184BF008DEA08 /* DogImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D62AB184BF008DEA08 /* DogImageData.swift */; };
 		CE1084D92AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D82AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift */; };
 		CE1084DC2AB1C789008DEA08 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CE1084DB2AB1C789008DEA08 /* AlamofireImage */; };
+		CE1084DE2AB29368008DEA08 /* DogPagingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084DD2AB29368008DEA08 /* DogPagingPageViewController.swift */; };
+		CE1084E02AB2BDDD008DEA08 /* SingleDogImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084DF2AB2BDDD008DEA08 /* SingleDogImageViewController.swift */; };
+		CE1084E22AB2C64B008DEA08 /* SingleDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084E12AB2C64B008DEA08 /* SingleDogViewController.swift */; };
 		CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */; };
 		CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */; };
 		CED8EEAD2AAB146C00AC6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED8EEAB2AAB146C00AC6D37 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 		CE1084D42AB14352008DEA08 /* ImageByBreedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageByBreedAPI.swift; sourceTree = "<group>"; };
 		CE1084D62AB184BF008DEA08 /* DogImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageData.swift; sourceTree = "<group>"; };
 		CE1084D82AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageTileCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE1084DD2AB29368008DEA08 /* DogPagingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPagingPageViewController.swift; sourceTree = "<group>"; };
+		CE1084DF2AB2BDDD008DEA08 /* SingleDogImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDogImageViewController.swift; sourceTree = "<group>"; };
+		CE1084E12AB2C64B008DEA08 /* SingleDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDogViewController.swift; sourceTree = "<group>"; };
 		CED8EEA22AAB146C00AC6D37 /* DogViewApp_School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogViewApp_School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +64,11 @@
 		CE1084C72AB0510E008DEA08 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				CE1084DD2AB29368008DEA08 /* DogPagingPageViewController.swift */,
 				CE1084C52AB05107008DEA08 /* DogListViewController.swift */,
+				CE1084DF2AB2BDDD008DEA08 /* SingleDogImageViewController.swift */,
 				CE1084D22AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift */,
+				CE1084E12AB2C64B008DEA08 /* SingleDogViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1084CC2AB06016008DEA08 /* DogAPIWrapper.swift in Sources */,
+				CE1084E02AB2BDDD008DEA08 /* SingleDogImageViewController.swift in Sources */,
 				CE1084CF2AB06094008DEA08 /* ListAllBreedsAPI.swift in Sources */,
 				CE1084D32AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift in Sources */,
 				CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */,
@@ -202,6 +212,8 @@
 				CE1084D12AB06459008DEA08 /* BreedsData.swift in Sources */,
 				CE1084D52AB14352008DEA08 /* ImageByBreedAPI.swift in Sources */,
 				CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */,
+				CE1084E22AB2C64B008DEA08 /* SingleDogViewController.swift in Sources */,
+				CE1084DE2AB29368008DEA08 /* DogPagingPageViewController.swift in Sources */,
 				CE1084C62AB05107008DEA08 /* DogListViewController.swift in Sources */,
 				CE1084C92AB051F7008DEA08 /* DogListTableViewCell.swift in Sources */,
 				CE1084D92AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift in Sources */,
