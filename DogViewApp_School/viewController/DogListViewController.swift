@@ -49,7 +49,6 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     private func refreshTableView() {
         DispatchQueue.main.async {
-            self.dogListTableView.refreshControl?.endRefreshing()
             self.dogListTableView.reloadData()
         }
     }
@@ -86,6 +85,24 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
         
         return cell
+    }
+    
+    // Cell が選択された場合に解除しないとRejectされるらしいので追加
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){        // セルの選択を解除
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    /// セグエで情報を受け渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toBreedsSelectedTile" {
+            if let indexPath = dogListTableView.indexPathForSelectedRow {
+                guard let selectedBreedsCollectionViewController = segue.destination as? SelectedBreedsCollectionViewController else {
+                    fatalError("Failed to prepare SelectedBreedsCollectionViewController.")
+                }
+                let rowBreadData = breedsList[indexPath.row]
+                selectedBreedsCollectionViewController.selectedBreed = rowBreadData
+            }
+        }
     }
 
 }

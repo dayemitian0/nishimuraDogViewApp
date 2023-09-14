@@ -22,4 +22,16 @@ class DogAPIWrapper {
         }
     }
     
+    func getDogImageData(breed: BreedsData, success: @escaping([DogImageData]) -> Void) {
+        let api = ImageByBreedAPI()
+        api.getBreedImageUrlAPI(breed: breed) { urlList in
+            var dogImageDataList: [DogImageData] = []
+            for url in urlList {
+                let dogImageData = DogImageData(urlString: url)
+                dogImageDataList.append(dogImageData)
+            }
+            success(dogImageDataList)
+        }
+    }
+        
 }

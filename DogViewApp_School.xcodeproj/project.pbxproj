@@ -12,9 +12,13 @@
 		CE1084CC2AB06016008DEA08 /* DogAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084CB2AB06016008DEA08 /* DogAPIWrapper.swift */; };
 		CE1084CF2AB06094008DEA08 /* ListAllBreedsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084CE2AB06094008DEA08 /* ListAllBreedsAPI.swift */; };
 		CE1084D12AB06459008DEA08 /* BreedsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D02AB06459008DEA08 /* BreedsData.swift */; };
+		CE1084D32AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D22AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift */; };
+		CE1084D52AB14352008DEA08 /* ImageByBreedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D42AB14352008DEA08 /* ImageByBreedAPI.swift */; };
+		CE1084D72AB184BF008DEA08 /* DogImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D62AB184BF008DEA08 /* DogImageData.swift */; };
+		CE1084D92AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1084D82AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift */; };
+		CE1084DC2AB1C789008DEA08 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CE1084DB2AB1C789008DEA08 /* AlamofireImage */; };
 		CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */; };
 		CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */; };
-		CED8EEAA2AAB146C00AC6D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8EEA92AAB146C00AC6D37 /* ViewController.swift */; };
 		CED8EEAD2AAB146C00AC6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED8EEAB2AAB146C00AC6D37 /* Main.storyboard */; };
 		CED8EEAF2AAB146D00AC6D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED8EEAE2AAB146D00AC6D37 /* Assets.xcassets */; };
 		CED8EEB22AAB146D00AC6D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED8EEB02AAB146D00AC6D37 /* LaunchScreen.storyboard */; };
@@ -26,10 +30,13 @@
 		CE1084CB2AB06016008DEA08 /* DogAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIWrapper.swift; sourceTree = "<group>"; };
 		CE1084CE2AB06094008DEA08 /* ListAllBreedsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllBreedsAPI.swift; sourceTree = "<group>"; };
 		CE1084D02AB06459008DEA08 /* BreedsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsData.swift; sourceTree = "<group>"; };
+		CE1084D22AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBreedsCollectionViewController.swift; sourceTree = "<group>"; };
+		CE1084D42AB14352008DEA08 /* ImageByBreedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageByBreedAPI.swift; sourceTree = "<group>"; };
+		CE1084D62AB184BF008DEA08 /* DogImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageData.swift; sourceTree = "<group>"; };
+		CE1084D82AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageTileCollectionViewCell.swift; sourceTree = "<group>"; };
 		CED8EEA22AAB146C00AC6D37 /* DogViewApp_School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogViewApp_School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED8EEA92AAB146C00AC6D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED8EEAC2AAB146C00AC6D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED8EEAE2AAB146D00AC6D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED8EEB12AAB146D00AC6D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1084DC2AB1C789008DEA08 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1084C52AB05107008DEA08 /* DogListViewController.swift */,
+				CE1084D22AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -59,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1084C82AB051F7008DEA08 /* DogListTableViewCell.swift */,
+				CE1084D82AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -68,6 +78,7 @@
 			children = (
 				CE1084CB2AB06016008DEA08 /* DogAPIWrapper.swift */,
 				CE1084CE2AB06094008DEA08 /* ListAllBreedsAPI.swift */,
+				CE1084D42AB14352008DEA08 /* ImageByBreedAPI.swift */,
 			);
 			path = DogAPI;
 			sourceTree = "<group>";
@@ -96,8 +107,8 @@
 				CE1084C72AB0510E008DEA08 /* viewController */,
 				CED8EEA52AAB146C00AC6D37 /* AppDelegate.swift */,
 				CE1084D02AB06459008DEA08 /* BreedsData.swift */,
+				CE1084D62AB184BF008DEA08 /* DogImageData.swift */,
 				CED8EEA72AAB146C00AC6D37 /* SceneDelegate.swift */,
-				CED8EEA92AAB146C00AC6D37 /* ViewController.swift */,
 				CED8EEAB2AAB146C00AC6D37 /* Main.storyboard */,
 				CED8EEAE2AAB146D00AC6D37 /* Assets.xcassets */,
 				CED8EEB02AAB146D00AC6D37 /* LaunchScreen.storyboard */,
@@ -122,6 +133,9 @@
 			dependencies = (
 			);
 			name = DogViewApp_School;
+			packageProductDependencies = (
+				CE1084DB2AB1C789008DEA08 /* AlamofireImage */,
+			);
 			productName = DogViewApp_School;
 			productReference = CED8EEA22AAB146C00AC6D37 /* DogViewApp_School.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +164,9 @@
 				Base,
 			);
 			mainGroup = CED8EE992AAB146C00AC6D37;
+			packageReferences = (
+				CE1084DA2AB1C789008DEA08 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = CED8EEA32AAB146C00AC6D37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,14 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED8EEAA2AAB146C00AC6D37 /* ViewController.swift in Sources */,
 				CE1084CC2AB06016008DEA08 /* DogAPIWrapper.swift in Sources */,
 				CE1084CF2AB06094008DEA08 /* ListAllBreedsAPI.swift in Sources */,
+				CE1084D32AB13D06008DEA08 /* SelectedBreedsCollectionViewController.swift in Sources */,
 				CED8EEA62AAB146C00AC6D37 /* AppDelegate.swift in Sources */,
+				CE1084D72AB184BF008DEA08 /* DogImageData.swift in Sources */,
 				CE1084D12AB06459008DEA08 /* BreedsData.swift in Sources */,
+				CE1084D52AB14352008DEA08 /* ImageByBreedAPI.swift in Sources */,
 				CED8EEA82AAB146C00AC6D37 /* SceneDelegate.swift in Sources */,
 				CE1084C62AB05107008DEA08 /* DogListViewController.swift in Sources */,
 				CE1084C92AB051F7008DEA08 /* DogListTableViewCell.swift in Sources */,
+				CE1084D92AB185F4008DEA08 /* DogImageTileCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE1084DA2AB1C789008DEA08 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE1084DB2AB1C789008DEA08 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE1084DA2AB1C789008DEA08 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED8EE9A2AAB146C00AC6D37 /* Project object */;
 }
