@@ -9,7 +9,7 @@ import Foundation
 
 class ListAllBreedsAPI {
 
-    let url = URL(string:"https://dog.ceo/api/breeds/list/all")
+    let url = URL(string:"http://testsaltef.starfree.jp/myjson")
 
     func getListAllBreedsAPI(success: @escaping([String: [String]]) -> Void) {
         

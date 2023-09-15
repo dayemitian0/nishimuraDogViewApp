@@ -10,7 +10,7 @@ import AlamofireImage // 画像をきゃっしゅして使うためにライブ�
 
 class DogPagingPageViewController: UIPageViewController , UIGestureRecognizerDelegate{
 
-    var pagingDogImageList: [DogImageData] = [DogImageData(urlString: "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg")]
+    var pagingDogImageList: [DogImageData] = [DogImageData(urlString: "http://testsaltef.starfree.jp/ef.jpeg")]
     var index: Int = 0
 
     var pageControl: UIPageControl!
