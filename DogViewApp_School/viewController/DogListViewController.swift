@@ -29,6 +29,17 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         print("tappled randum")
     }
     
+    
+    func doDBTest() {
+        guard let useData = self.breedsList.first else {return}
+        let breed = Breed(breed: useData.dogBreeds)
+        if DatabaseAccessTest.shared.insertBreed(breed: breed) {
+            print ("DB OK insert")
+        } else {
+            print("fail to insert.")
+        }
+    }
+    
     // 右端の詳細箇所タップ
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         guard let cell = dogListTableView.dequeueReusableCell(withIdentifier: "dogListCell", for: indexPath) as? DogListTableViewCell else {
@@ -57,6 +68,10 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         let apiWrapper = DogAPIWrapper()
         apiWrapper.getDogList { breedsDatas in
             self.setBreedList(breedsList: breedsDatas)
+
+            // DBに値を格納
+            self.doDBTest()
+
             self.refreshTableView()
         }
     }
